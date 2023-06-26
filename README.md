@@ -7,7 +7,9 @@
 <!-- badges: end -->
 
 `clash` provides an R interface to the [Clash of Clans
-API](https://developer.clashofclans.com/#/). \## Installation
+API](https://developer.clashofclans.com/#/).
+
+## Installation
 
 You can install the development version of `clash` from
 [GitHub](https://github.com/) with:
