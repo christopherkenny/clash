@@ -20,7 +20,7 @@ Gets full clan details
 }
 \examples{
 \dontshow{if (clash::has_clash_key()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
-coc_get_clan('8UC2J90Y')
+coc_get_clan(clan = '8UC2J90Y')
 \dontshow{\}) # examplesIf}
 }
 \concept{clan}
