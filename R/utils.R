@@ -95,5 +95,3 @@ unnest_tibble <- function(out) {
   }
   out
 }
-
-

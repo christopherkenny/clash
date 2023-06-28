@@ -31,6 +31,16 @@ coc_get_clan <- function(clan, key = get_clash_key()) {
     widen() |>
     unnest_single()
 
+  out$memberList <- list(lapply(
+    out$memberList, function(el) {
+      lapply(el, function(x) {
+        x |> unnest_single() |> unnest_tibble() |> widen()
+      }) |> dplyr::bind_rows()
+    })  |> dplyr::bind_rows())
+
+  out <- out |>
+    unnest_tibble()
+
   out <- out |>
     dplyr::rename_with(.fn = function(x) stringr::str_replace(x, 'member_list', 'player'))
 
