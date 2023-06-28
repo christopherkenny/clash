@@ -10,7 +10,7 @@ coc_get_player(tag, key = get_clash_key())
 \item{tag}{Required. The player to return.}
 
 \item{key}{Required. API key. See \url{https://developer.clashofclans.com/#/documentation}
-Default: \code{coc_get_key()}}
+Default: \code{get_clash_key()}}
 }
 \value{
 a \code{tibble} of player info

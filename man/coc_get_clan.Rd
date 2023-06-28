@@ -4,10 +4,10 @@
 \alias{coc_get_clan}
 \title{Get a clan}
 \usage{
-coc_get_clan(clan, key = cr_get_key())
+coc_get_clan(clan, key = get_clash_key())
 }
 \arguments{
-\item{clan}{Required. Clan tag. Default: 99R2PQVR}
+\item{clan}{Required. Clan tag.}
 
 \item{key}{Required. API key. See \url{https://developer.clashofclans.com/#/documentation}
 Default: \code{get_clash_key()}}
@@ -19,8 +19,8 @@ a \code{tibble} with each row as a player
 Gets full clan details
 }
 \examples{
-\dontshow{if (royale::cr_has_key()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
-coc_get_clan('99R2PQVR')
+\dontshow{if (clash::has_clash_key()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
+coc_get_clan('8UC2J90Y')
 \dontshow{\}) # examplesIf}
 }
 \concept{clan}
