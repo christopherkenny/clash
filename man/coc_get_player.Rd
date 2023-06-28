@@ -4,7 +4,7 @@
 \alias{coc_get_player}
 \title{Get a single player}
 \usage{
-coc_get_player(tag = "92GCQQYP", key = get_clash_key())
+coc_get_player(tag, key = get_clash_key())
 }
 \arguments{
 \item{tag}{Required. The player to return.}

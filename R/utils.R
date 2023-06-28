@@ -67,3 +67,33 @@ widen <- function(x) {
     tidyr::unnest_wider(col = where(~purrr::pluck_depth(.x) < 4), simplify = TRUE, names_sep = '_') |>
     dplyr::rename_with(.fn = function(x) stringr::str_sub(x, end = -3), .cols = dplyr::ends_with('_1'))
 }
+
+unnest_single <- function(out) {
+  to_unnest <- lapply(out, function(x) if (is.data.frame(x[[1]])) return(NULL) else names(x[[1]])) |>
+    lengths() |>
+    purrr::discard(function(x) x == 0) |>
+    names()
+
+  for (i in seq_along(to_unnest)) {
+    out <- out |>
+      tidyr::unnest_wider(tidyr::any_of(to_unnest[i]), names_sep = '_')
+  }
+
+  out
+}
+
+unnest_tibble <- function(out) {
+  to_bind_row <- purrr::map_int(out, function(x) length(names(x[[1]][[1]]))) |>
+    purrr::discard(function(x) x == 0) |>
+    names()
+
+  for (i in seq_along(to_bind_row)) {
+    out[[to_bind_row[i]]] <- list(
+      dplyr::bind_rows(out[[to_bind_row[i]]]) |>
+        clean_names()
+    )
+  }
+  out
+}
+
+

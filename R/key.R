@@ -82,3 +82,16 @@ set_clash_key <- function(key, overwrite = FALSE, install = FALSE) {
 
   invisible(key)
 }
+
+#' @rdname key
+#' @export
+coc_get_key <- get_clash_key
+
+
+#' @rdname key
+#' @export
+coc_set_key <- set_clash_key
+
+#' @rdname key
+#' @export
+coc_has_key <- has_clash_key
