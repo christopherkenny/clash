@@ -1,10 +1,10 @@
-#' Get current clan members
+#' Get CLan War Log
 #'
 #' @param clan Required. Clan tag.
+#' @param key `r template_var_key()`
 #' @param limit `r template_var_limit()`
 #' @param after `r template_var_after()`
 #' @param before `r template_var_before()`
-#' @param key `r template_var_key()`
 #'
 #' @return `tibble` with list columns for clan, clans, and history.
 #'
@@ -13,10 +13,10 @@
 #' @export
 #'
 #' @examplesIf clash::has_clash_key()
-#' coc_get_clan_members(clan = '8UC2J90Y')
-coc_get_clan_members <- function(clan,
-                                limit = NULL, after = NULL, before = NULL,
-                                key = coc_get_key()) {
+#' coc_get_war_log(clan = '8UC2J90Y')
+coc_get_war_log <- function(clan,
+                            limit = NULL, after = NULL, before = NULL,
+                            key = coc_get_key()) {
 
   # Check inputs ---
   check_valid_clan(clan)
@@ -25,7 +25,7 @@ coc_get_clan_members <- function(clan,
   # Call to API ---
   resp <- req_base() |>
     req_clan(clan) |>
-    httr2::req_url_path_append('members') |>
+    httr2::req_url_path_append('warlog') |>
     req_header(key) |>
     req_where(limit, after, before) |>
     httr2::req_perform() |>
@@ -34,6 +34,9 @@ coc_get_clan_members <- function(clan,
   # Clean output ---
   out <- dplyr::bind_rows(lapply(resp$items, widen)) |>
     clean_names()
+
+  out$clan <- lapply(out$clan, dplyr::bind_rows)
+  out$opponent <- lapply(out$opponent, dplyr::bind_rows)
 
   `attr<-`(out, 'paging', resp$paging)
 

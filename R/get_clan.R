@@ -13,7 +13,7 @@
 #' @export
 #'
 #' @examplesIf clash::has_clash_key()
-#' coc_get_clan('8UC2J90Y')
+#' coc_get_clan(clan = '8UC2J90Y')
 coc_get_clan <- function(clan, key = get_clash_key()) {
 
   # Check inputs ---
