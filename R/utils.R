@@ -52,6 +52,15 @@ req_header <- function(req, key) {
   httr2::req_auth_bearer_token(req, key)
 }
 
+req_where <- function(req, limit, after, before) {
+  httr2::req_url_query(
+    req,
+    'limit' = limit,
+    'after' = after,
+    'before' = before
+  )
+}
+
 clean_names <- function(x) {
   out <- names(x) |>
     stringr::str_replace_all('\\.', '_') |>
