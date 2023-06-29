@@ -2,7 +2,7 @@
 % Please edit documentation in R/get_war_log.R
 \name{coc_get_war_log}
 \alias{coc_get_war_log}
-\title{Get CLan War Log}
+\title{Get Clan War Log}
 \usage{
 coc_get_war_log(
   clan,
@@ -28,7 +28,7 @@ Default: \code{get_clash_key()}}
 \code{tibble} with list columns for clan, clans, and history.
 }
 \description{
-Get CLan War Log
+Get Clan War Log
 }
 \examples{
 \dontshow{if (clash::has_clash_key()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}

@@ -1,4 +1,4 @@
-#' Get CLan War Log
+#' Get Clan War Log
 #'
 #' @param clan Required. Clan tag.
 #' @param key `r template_var_key()`
