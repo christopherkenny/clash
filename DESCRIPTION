@@ -6,7 +6,9 @@ Authors@R: c(
     email = "christopherkenny@fas.harvard.edu", 
     role = c("aut", "cre"), 
     comment = c(ORCID = "0000-0002-9386-6860")))
-Description: R interface to the official API for Clash of Clans <https://developer.clashofclans.com/#/>.
+Description: 
+    Interfaces with the official API for Clash of Clans <https://developer.clashofclans.com/#/>.
+    Provides tools to work with players, clans, wars, raids, and other game events. All outputs are provided in a tidy format, where each player, clan, or attack is an observation.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
