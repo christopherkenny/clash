@@ -21,4 +21,4 @@ reference:
   - title: "Other functions"
     desc: "Other functions, including working with keys"
   - contents:
-    - lacks_concepts(c("clan", "player", "locations"))
+    - lacks_concepts(c("clan", "player", "league", "locations"))
