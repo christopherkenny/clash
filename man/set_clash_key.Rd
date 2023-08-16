@@ -2,9 +2,12 @@
 % Please edit documentation in R/key.R
 \name{set_clash_key}
 \alias{set_clash_key}
+\alias{coc_set_key}
 \title{Add Entry to Renviron}
 \usage{
 set_clash_key(key, overwrite = FALSE, install = FALSE)
+
+coc_set_key(key, overwrite = FALSE, install = FALSE)
 }
 \arguments{
 \item{key}{Character. API key to add to add.}

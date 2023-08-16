@@ -24,6 +24,8 @@ coc_get_clan_search(
 
 \item{location_id}{Filter by clan location identifier}
 
+\item{war_frequency}{Filter by war frequency}
+
 \item{min_members}{Filter by minimum number of clan members}
 
 \item{max_members}{Filter by maximum number of clan members}

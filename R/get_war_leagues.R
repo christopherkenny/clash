@@ -1,6 +1,5 @@
 #' Get War Leagues
 #'
-#' @param clan Required. Clan tag.
 #' @param key `r template_var_key()`
 #' @param limit `r template_var_limit()`
 #' @param after `r template_var_after()`

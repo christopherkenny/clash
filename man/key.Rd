@@ -5,7 +5,6 @@
 \alias{has_clash_key}
 \alias{get_clash_key}
 \alias{coc_get_key}
-\alias{coc_set_key}
 \alias{coc_has_key}
 \title{Check or Get Clash of Clans API Key}
 \usage{
@@ -14,8 +13,6 @@ has_clash_key()
 get_clash_key()
 
 coc_get_key()
-
-coc_set_key(key, overwrite = FALSE, install = FALSE)
 
 coc_has_key()
 }

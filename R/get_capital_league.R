@@ -1,7 +1,6 @@
 #' Get information for one capital league
 #'
 #' @param league league id, such as 85000022
-#' @param clan Required. Clan tag.
 #' @param key `r template_var_key()`
 #' @param limit `r template_var_limit()`
 #' @param after `r template_var_after()`

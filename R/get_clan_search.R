@@ -2,6 +2,7 @@
 #'
 #' @param name Search clans by name
 #' @param location_id Filter by clan location identifier
+#' @param war_frequency Filter by war frequency
 #' @param min_members Filter by minimum number of clan members
 #' @param max_members Filter by maximum number of clan members
 #' @param min_clan_points minimum amount of clan points

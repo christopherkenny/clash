@@ -30,13 +30,14 @@ coc_get_war_current <- function(clan,
     req_where(limit, after, before) |>
     httr2::req_perform() |>
     httr2::resp_body_json()
+  return(resp)
 
   # Clean output ---
   out <- resp |>
     widen() |>
     unnest_single() |>
-    unnest_tibble() |>
-    unnest_single() |>
+    #unnest_tibble() |>
+    #unnest_single() |>
     clean_names()
 
   `attr<-`(out, 'paging', resp$paging)

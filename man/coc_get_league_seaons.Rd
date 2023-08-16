@@ -6,7 +6,6 @@
 \usage{
 coc_get_league_seaons(
   league,
-  season,
   limit = NULL,
   after = NULL,
   before = NULL,

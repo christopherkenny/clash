@@ -14,7 +14,7 @@
 #'
 #' @examplesIf clash::has_clash_key()
 #' coc_get_league_seaons(league = '29000022', limit = 10)
-coc_get_league_seaons <- function(league, season,
+coc_get_league_seaons <- function(league,
                            limit = NULL, after = NULL, before = NULL,
                            key = coc_get_key()) {
 

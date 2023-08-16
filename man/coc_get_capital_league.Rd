@@ -23,8 +23,6 @@ coc_get_capital_league(
 
 \item{key}{Required. API key. See \url{https://developer.clashofclans.com/#/documentation}.
 Default: \code{get_clash_key()}}
-
-\item{clan}{Required. Clan tag.}
 }
 \value{
 \code{tibble} with list columns for clan, clans, and history.
