@@ -35,4 +35,4 @@ Get information for one Builder Base league
 coc_get_builderbase_league(league = '44000041', limit = 10)
 \dontshow{\}) # examplesIf}
 }
-\concept{clan}
+\concept{league}

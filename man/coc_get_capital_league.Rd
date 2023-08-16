@@ -35,4 +35,4 @@ Get information for one capital league
 coc_get_capital_league(league = '85000022', limit = 10)
 \dontshow{\}) # examplesIf}
 }
-\concept{clan}
+\concept{league}

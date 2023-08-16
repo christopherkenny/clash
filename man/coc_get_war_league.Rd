@@ -35,4 +35,4 @@ Get information for one war league
 coc_get_war_league(league = 48000018, limit = 10)
 \dontshow{\}) # examplesIf}
 }
-\concept{clan}
+\concept{league}

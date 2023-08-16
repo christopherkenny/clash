@@ -35,4 +35,4 @@ Get seasons for one league
 coc_get_league_seaons(league = '29000022', limit = 10)
 \dontshow{\}) # examplesIf}
 }
-\concept{clan}
+\concept{league}

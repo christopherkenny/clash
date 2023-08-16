@@ -32,4 +32,4 @@ Get War Leagues
 coc_get_war_leagues(limit = 10)
 \dontshow{\}) # examplesIf}
 }
-\concept{clan}
+\concept{league}

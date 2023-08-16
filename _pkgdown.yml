@@ -14,6 +14,10 @@ reference:
     desc: "Access information for a location"
   - contents:
     - has_concept("locations")
+  - title: "Leagues"
+    desc: "Access information for leagues"
+  - contents:
+    - has_concept("league")
   - title: "Other functions"
     desc: "Other functions, including working with keys"
   - contents:

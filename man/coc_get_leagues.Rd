@@ -27,4 +27,4 @@ Get Leagues
 coc_get_leagues(limit = 10)
 \dontshow{\}) # examplesIf}
 }
-\concept{clan}
+\concept{league}

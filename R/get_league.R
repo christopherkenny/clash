@@ -9,7 +9,7 @@
 #'
 #' @return `tibble` with list columns for clan, clans, and history.
 #'
-#' @concept clan
+#' @concept league
 #'
 #' @export
 #'
