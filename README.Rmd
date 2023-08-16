@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# clash
+# clash <a href="http://christophertkenny.com/clash/"><img src="man/figures/logo.png" align="right" height="138" alt="clash website" /></a>
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/christopherkenny/clash/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/christopherkenny/clash/actions/workflows/R-CMD-check.yaml)
@@ -34,11 +34,26 @@ remotes::install_github("christopherkenny/clash")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+Current endpoints are included for cards, rankings, tournaments, players, and clans.
+
+To get a player’s data, we can use:
 
 ```{r example}
 library(clash)
-## basic example code
+
+coc_get_player('92GCQQYP')
+```
+
+To get a clan, we can use:
+
+```{r}
+clan <- coc_get_clan('8UC2J9OY')
+clan
+```
+This returns clan-level attributes, such as lists of members in the clan:
+
+```{r}
+clan$member_list
 ```
 
 
