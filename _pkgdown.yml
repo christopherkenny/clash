@@ -1,0 +1,20 @@
+url: http://christophertkenny.com/clash/
+template:
+  bootstrap: 5
+reference:
+  - title: "Clans"
+    desc: "Access clan information"
+  - contents:
+    - has_concept("clan")
+  - title: "Players"
+    desc: "Access player information"
+  - contents:
+    - has_concept("player")
+  - title: "Locations"
+    desc: "Access information for a location"
+  - contents:
+    - has_concept("locations")
+  - title: "Other functions"
+    desc: "Other functions, including working with keys"
+  - contents:
+    - lacks_concepts(c("clan", "player", "locations"))
