@@ -16,6 +16,7 @@ knitr::opts_chunk$set(
 # clash
 
 <!-- badges: start -->
+[![R-CMD-check](https://github.com/christopherkenny/clash/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/christopherkenny/clash/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 `clash` provides an R interface to the [Clash of Clans
