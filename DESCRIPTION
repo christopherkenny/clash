@@ -1,6 +1,6 @@
 Package: clash
 Title: Access the Clash of Clans API
-Version: 0.0.0.9000
+Version: 0.0.1
 Authors@R: c( 
     person("Christopher T.", "Kenny", 
     email = "christopherkenny@fas.harvard.edu", 

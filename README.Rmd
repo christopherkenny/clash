@@ -17,6 +17,8 @@ knitr::opts_chunk$set(
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/christopherkenny/clash/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/christopherkenny/clash/actions/workflows/R-CMD-check.yaml)
+[![clash status badge](https://christopherkenny.r-universe.dev/badges/clash)](https://christopherkenny.r-universe.dev/clash)
+[![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
 <!-- badges: end -->
 
 `clash` provides an R interface to the [Clash of Clans
