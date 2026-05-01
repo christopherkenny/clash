@@ -25,5 +25,6 @@ Suggests:
     httptest2,
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
+Config/Needs/website: christopherkenny/ctktemplate
 URL: https://github.com/christopherkenny/clash, http://christophertkenny.com/clash/
 BugReports: https://github.com/christopherkenny/clash/issues
