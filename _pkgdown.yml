@@ -1,6 +1,7 @@
 url: http://christophertkenny.com/clash/
 template:
   bootstrap: 5
+  package: ctktemplate
 reference:
   - title: "Clans"
     desc: "Access clan information"
